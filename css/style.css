@@ -1,27 +1,28 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
 }
 
 /* THIS IS ALL meant for editing. You might want to do it differently, 
 name the variables differently, 
-use the fonts in other ways in the font hierarchy etc. */
+use the fonts in other ways in the font hierarchy etc. 
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Oswald', sans-serif;*/
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: rgb(102, 44, 196);
+  --link-color: rgb(253, 114, 0);
+  --link-hover-color: rgb(252, 153, 72);
+  --color-4: rgb(138, 104, 194);
+  --color-5: rgb(0, 0, 0);
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Oswald", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
@@ -34,17 +35,12 @@ a {
   transition: all 3s;
 }
 button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
-}
-
-button:active {
-  background-color: var(--bg-color);
+  transform: scale(1.1);
 }
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+  font-size: 1.1rem;
 }
 html {
   font-size: 100%;
@@ -73,7 +69,7 @@ footer {
 .header-wrapper h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: -2px;
+  letter-spacing: 0px;
   padding-right: 0.75em;
   font-weight: bold;
   color: white;
@@ -82,7 +78,7 @@ footer {
 .header-wrapper h2 {
   font-size: 1.6em;
   color: rgba(255, 255, 255, 0.95);
-  font-weight: bold;
+  font-weight: medium;
   margin: var(--white-space) 0;
 }
 
@@ -104,7 +100,6 @@ section {
 }
 
 .section-heading {
-  font-style: italic;
   font-size: 1.3rem;
   color: #777;
   margin: 0.5rem 0;
@@ -117,8 +112,9 @@ ul {
 
 .swatches li {
   margin-right: 5vw;
-  height: 15vw;
+  height: 20vw;
   width: 20%;
+  border-radius: 20px;
 }
 
 ul li:last-child {
@@ -145,28 +141,6 @@ ul li:last-child {
   background-color: var(--color-5);
 }
 
-.textures li {
-  height: 30vw;
-  width: 40%;
-  margin-right: 5vw;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
-}
-
-.texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
-}
-
-.texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
-}
-
 .images ul {
   flex-direction: column;
   text-align: center;
@@ -179,30 +153,28 @@ ul li:last-child {
 }
 
 button {
-  padding: 1rem;
-  border-radius: 4px;
+  padding: 1rem 1.8rem;
+  border: none;
+  border-radius: 30px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 var(--primary-font);
-  letter-spacing: 1px;
-  color: white;
+  font: bold 1.25em/1 var(--secondary-font);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
   transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--link-hover-color);
 }
 
 button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-  border-radius: 4px;
 }
 
 .typography-main {
@@ -210,19 +182,18 @@ button:focus-within {
 }
 
 .h1-sample {
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
-  font-style: italic;
-  font-size: 1.25rem;
+  font-family: var(--primary-font);
+  font-size: 2rem;
 }
 
 p.typography-sample {
   font-family: var(--secondary-font);
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 960px;
 }
 
@@ -272,7 +243,7 @@ footer {
 
   .swatches li {
     margin-right: 3%;
-    height: 10vw;
+    height: 18vw;
     width: 20%;
   }
 
